@@ -117,6 +117,28 @@ section{padding:76px 0}
 @media (max-width:760px){.who{grid-template-columns:1fr}}
 
 
+/* work gallery */
+.work{background:var(--navy);color:#fff;--muted:#BCCDF0}
+.work .head p{color:var(--muted)}
+.gal{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.vc{display:block;text-decoration:none;background:#10265A;border:1px solid #2D4F96;border-radius:18px;overflow:hidden;transition:transform .2s,border-color .2s}
+.vc:hover{transform:translateY(-4px);border-color:var(--sun)}
+.vc .th{aspect-ratio:4/3;display:grid;place-items:center;background:linear-gradient(135deg,#0B3A8F,#0A1B3D);position:relative}
+.vc .th svg{width:66%;height:auto;grid-area:1/1}
+.vc .th b{position:absolute;right:10px;bottom:10px;width:30px;height:30px;border-radius:50%;background:var(--sun)}
+.vc .th b::after{content:"";position:absolute;left:12px;top:8px;border-left:10px solid #0A1B3D;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.vc .th i{grid-area:1/1;z-index:1;width:0;height:0;border-left:18px solid #0A1B3D;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+.vc .tag{position:absolute;left:12px;top:12px;font-size:13px;font-weight:600;background:rgba(255,255,255,.14);padding:4px 12px;border-radius:999px}
+.vc .tx{padding:12px 14px 14px}
+.vc h3{font-size:18px;color:#fff;line-height:1.15}
+.vc p{color:var(--muted);font-size:15px;margin-top:4px}
+.vc .go{display:inline-block;margin-top:10px;color:var(--sun);font-weight:600;font-size:15px}
+.work .all{margin-top:28px}
+.work .btn{background:var(--sun);color:#0A1630;font-weight:700}
+@media (max-width:1000px){.gal{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.gal{grid-template-columns:1fr 1fr}}
+@media (max-width:360px){.gal{grid-template-columns:1fr}}
+
 /* booking */
 .book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
 .book h2{font-size:clamp(30px,4.4vw,48px);font-weight:700}
@@ -167,6 +189,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <nav aria-label="Main">
       <a href="#services">Services</a>
       <a href="#process">How we work</a>
+      <a href="#work">Our work</a>
       <a href="#who">Who we help</a>
       <a href="#contact">Contact</a>
       <a class="btn" href="#book">Book now</a>
@@ -270,6 +293,28 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
       <div class="step"><b>3</b><h3>Launch</h3><p>We publish content, start campaigns and set up tracking.</p></div>
       <div class="step"><b>4</b><h3>Measure</h3><p>You get a clear report each month and we adjust what to do next.</p></div>
     </div>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="wrap">
+    <div class="head">
+      <h2>Our work</h2>
+      <p>Watch our reference videos by industry. Tap any card to open that folder on Google Drive.</p>
+    </div>
+    <div class="gal">
+      <a class="vc" href="https://drive.google.com/drive/folders/1_GhMDcsU6rb-5o3FXsgP49LekywTHOtp?usp=sharing" target="_blank" rel="noopener" aria-label="Automobile videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#0B3A8F,#0A1B3D)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 56V48Q14 44 20 42L32 40L42 28Q45 25 50 25H76Q81 25 84 29L92 40L104 43Q108 44 108 49V56Z"/><path d="M44 30L38 40H62V28H50Q46 28 44 30ZM68 28V40H88L80 30Q78 28 74 28Z"/><circle cx="36" cy="58" r="9" fill="#0A1B3D"/><circle cx="86" cy="58" r="9" fill="#0A1B3D"/><circle cx="36" cy="58" r="3" fill="#19C3FF" stroke="none"/><circle cx="86" cy="58" r="3" fill="#19C3FF" stroke="none"/></svg><b></b></div><div class="tx"><h3>Automobile</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/1dcSEx6_W5DyAG7QdnNflchubsxGQKzeq?usp=drive_link" target="_blank" rel="noopener" aria-label="Beauty and Fitness videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#0E6FD9,#0A2A66)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="32" width="10" height="24" rx="3"/><rect x="24" y="24" width="10" height="40" rx="3"/><path d="M34 44H86"/><rect x="86" y="24" width="10" height="40" rx="3"/><rect x="98" y="32" width="10" height="24" rx="3"/><path d="M88 8L91 15L98 16L92 21L94 28L88 24L82 28L84 21L78 16L85 15Z" fill="#19C3FF" stroke="none"/></svg><b></b></div><div class="tx"><h3>Beauty and Fitness</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/1R7rrKQyqAKvxvJgp1YS2aHoh3G4isN07?usp=drive_link" target="_blank" rel="noopener" aria-label="Business consulting services videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#1B4FC4,#12245C)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="26" y="28" width="68" height="42" rx="6"/><path d="M48 28V22Q48 18 52 18H68Q72 18 72 22V28"/><path d="M26 46H94"/><rect x="54" y="42" width="12" height="9" rx="2" fill="#19C3FF"/></svg><b></b></div><div class="tx"><h3>Business consulting services</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/1WQS4awDSeRDoj7iEWB7ffSwfYVjb08l-?usp=drive_link" target="_blank" rel="noopener" aria-label="Education videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#0A5FB0,#0A2342)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M60 14L106 32L60 50L14 32Z"/><path d="M34 42V58Q60 70 86 58V42"/><path d="M106 32V54"/><circle cx="106" cy="57" r="4" fill="#19C3FF"/></svg><b></b></div><div class="tx"><h3>Education</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/1OfjBMAjs4f-d_g0UyUWq1-Vtn06CqyNg?usp=drive_link" target="_blank" rel="noopener" aria-label="Events videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#3A3FD8,#0F1C5E)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="22" y="22" width="76" height="50" rx="7"/><path d="M22 36H98M40 14V28M80 14V28"/><path d="M60 40L64 49L74 50L66 56L69 66L60 61L51 66L54 56L46 50L56 49Z" fill="#19C3FF" stroke="none"/></svg><b></b></div><div class="tx"><h3>Events</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/16ldVCw5M4apnLGUwdN-80xcGcuxU9K6G?usp=drive_link" target="_blank" rel="noopener" aria-label="Food and Hotels videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#0B7DB8,#0A2D58)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M26 58Q26 30 60 30Q94 30 94 58"/><path d="M14 58H106M18 66H102"/><circle cx="60" cy="25" r="5" fill="#19C3FF"/></svg><b></b></div><div class="tx"><h3>Food and Hotels</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/1-OZQrOu9wgaujnFOuc5GUgeRTRQSK-rG?usp=drive_link" target="_blank" rel="noopener" aria-label="Healthcare videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#0F8AA6,#0A2D58)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M52 14H68V34H88V50H68V70H52V50H32V34H52Z" fill="#19C3FF"/></svg><b></b></div><div class="tx"><h3>Healthcare</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/1GytEJxAbktI1DYNSzdP3SmZXs6-m0EQT?usp=drive_link" target="_blank" rel="noopener" aria-label="Real estate &amp; construction videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#2A58D6,#0D1F55)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 42L60 12L104 42"/><rect x="28" y="42" width="64" height="32"/><rect x="52" y="52" width="16" height="22" fill="#19C3FF"/><path d="M36 50H44M76 50H84"/></svg><b></b></div><div class="tx"><h3>Real estate &amp; construction</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/1lahGhVRYndo1jwx2-yl_MLip_XyM-VRa?usp=drive_link" target="_blank" rel="noopener" aria-label="Retail Shop and Sales videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#5A3FD0,#14205E)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 28H90L96 70H24Z"/><path d="M46 36V28Q46 14 60 14Q74 14 74 28V36"/><circle cx="60" cy="52" r="7" fill="#19C3FF" stroke="none"/></svg><b></b></div><div class="tx"><h3>Retail Shop and Sales</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+      <a class="vc" href="https://drive.google.com/drive/folders/1ArCzWQJxrlDTAfrp_tJfaQGpTjxyN97J?usp=drive_link" target="_blank" rel="noopener" aria-label="Travels / tour operators videos on Google Drive"><div class="th" style="background:linear-gradient(135deg,#0B66E8,#0A1B3D)"><svg viewBox="0 0 120 80" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 40L108 12L84 68L58 48Z"/><path d="M58 48L108 12"/><path d="M58 48L62 66L72 55Z" fill="#19C3FF" stroke="none"/></svg><b></b></div><div class="tx"><h3>Travels / tour operators</h3><span class="go">Watch on Drive &rarr;</span></div></a>
+    </div>
+    <div class="all"><a class="btn" href="https://drive.google.com/drive/folders/1AF8ylTGoWNXYpvmXHcwJjaM74lAqyHJh?usp=sharing" target="_blank" rel="noopener">Open full gallery on Google Drive</a></div>
   </div>
 </section>
 
